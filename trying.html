@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get">
+     <fieldset>
+        <legend>put your info here</legend>
+    <p>
+        <label for="firstName">firstName</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+    </p>
+    <p>
+        <label for="lastName">lastName</label>
+        <input type="text" name="lastName" id="firstName" placeholder="Doe" autocomplete="on" required>
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="Password" placeholder="write your password here" required>
+    </p>
+    <p>
+        <label for="Phone">Phone</label>
+        <input type="tel" name="Phone" id="Phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required >
+    </p>
+
+    <p>
+        <label for="decade">favoriteDecade</label>
+        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980"required >
+    </p>
+    <label for="coffee">
+        <select name="coffee" id="coffee" multiple size="5">
+            <optgroup label="coffee">
+            <option value="coffee">Coffee</option>
+            <option value="iced coffee">iced Coffee</option>
+        </optgroup>
+        <optgroup label="espresso drinks">
+            <option value="frappe">Frappe</option>
+            <option value="Americano">Americano</option>
+            <option value="latte">Latte</option>
+            <option value="espresso">espresso</option>
+        </optgroup>
+        </select>
+    </label>
+    </fieldset>
+    <div>
+<fieldset>
+    <legend>more info options</legend>
+    <label for="coffee">
+      <input type="text" name="coffee" id="coffee" list="coffee-list">
+        <datalist id="coffee-list">
+            <option value="coffee">
+            <option value="iced coffee">
+            <option value="espresso">
+            <option value="frappe">
+            <option value="americano">
+            <option value="latte">
+        </datalist>
+    </label>
+</fieldset>
+</div>
+    </form>
+</body>
+</html>
